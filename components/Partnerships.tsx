@@ -18,7 +18,7 @@ const Partnerships = () => {
           <li className="mb-4 md:mb-0">
             <a href="https://www.gripworx.co.uk/">
               <img
-                src={isDarkMode ? "GRIPWORX_Light.png" : "GRIPWORX.png"}
+                src={isDarkMode ? "GRIPWORX_Light.png" : "GRIPWORX_Dark.png"}
                 alt="GRIPWORX"
                 className="md:scale-75 scale-75"
               />
