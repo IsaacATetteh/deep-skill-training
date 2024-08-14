@@ -1,5 +1,5 @@
 "use client";
-import { TypewriterEffect } from "../ui/typewriter-effect";
+import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
 import Checklist from "./checklist";
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
@@ -47,7 +47,7 @@ export function TypewriterEffectDemo() {
     <div className="flex flex-col items-center justify-center h-[40rem]">
       <div className="flex flex-col items-center md:mb-36">
         <img src="test.png" alt="DST" className="scale-75 md:scale-50 z-10" />
-        <TypewriterEffect words={words} className="mb-10" />
+        <TypewriterEffectSmooth words={words} />
         <Checklist />
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
           <button
