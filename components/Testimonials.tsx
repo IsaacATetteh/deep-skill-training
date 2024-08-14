@@ -32,7 +32,7 @@ const Testimonials = () => {
             <blockquote className="flex h-full flex-col justify-between items-center text-center bg-white dark:bg-background p-6 shadow-sm sm:p-8 border">
               <Image
                 alt="Denys Garmash"
-                src="/testimonial3.jpg"
+                src="/Denys.jpg"
                 className="rounded-full h-auto w-40 md:w-48 mt-3"
                 width={500}
                 height={500}

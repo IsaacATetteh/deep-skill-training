@@ -72,6 +72,10 @@ const Map = () => {
     threshold: 0.1,
   });
 
+  if (!isLoaded) {
+    return <div></div>;
+  }
+
   return (
     <section ref={sectionRef} className="bg-gray-50 dark:bg-background">
       <motion.div
