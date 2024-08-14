@@ -1,35 +1,35 @@
 "use client";
-import { TypewriterEffectSmooth } from "../ui/typewriter-effect";
+import { TypewriterEffect } from "../ui/typewriter-effect";
 import Checklist from "./checklist";
+import { BackgroundBeams } from "../ui/background-beams";
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
-
 export function TypewriterEffectDemo() {
   const words = [
     {
       text: "Developing",
     },
     {
-      text: "Your",
+      text: "your",
     },
     {
-      text: "Deep",
+      text: "deep",
       className: "underline",
     },
     {
-      text: "Skill,",
+      text: "skill,",
       className: "underline",
     },
 
     {
-      text: "The",
+      text: "the",
     },
     {
-      text: "Tailored",
+      text: "tailored",
       className: "text-blue-500 dark:text-blue-500",
     },
     {
-      text: "Way.",
+      text: "way.",
       className: "text-blue-500 dark:text-blue-500",
     },
   ].map((word) => ({
@@ -47,7 +47,7 @@ export function TypewriterEffectDemo() {
     <div className="flex flex-col items-center justify-center h-[40rem]">
       <div className="flex flex-col items-center md:mb-36">
         <img src="test.png" alt="DST" className="scale-75 md:scale-50 z-10" />
-        <TypewriterEffectSmooth words={words} />
+        <TypewriterEffect words={words} className="mb-10" />
         <Checklist />
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
           <button
