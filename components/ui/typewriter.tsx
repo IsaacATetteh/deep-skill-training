@@ -1,7 +1,6 @@
 "use client";
 import { TypewriterEffect } from "../ui/typewriter-effect";
 import Checklist from "./checklist";
-import { BackgroundBeams } from "../ui/background-beams";
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
 export function TypewriterEffectDemo() {
