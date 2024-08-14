@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+
 const Testimonials = () => {
   const { ref: sectionRef, inView: isSectionVisible } = useInView({
     triggerOnce: true,
@@ -31,14 +32,14 @@ const Testimonials = () => {
             <blockquote className="rounded-lg bg-white dark:bg-background border p-6 shadow-sm sm:p-8 text-center">
               <div className="flex flex-col items-center gap-4">
                 <img
-                  alt=""
+                  alt="Denys"
                   src="/Denys.jpg"
                   className="size-48 rounded-full object-cover"
+                  loading="lazy"
                 />
 
                 <div>
                   <div className="flex justify-center gap-0.5 text-green-500">
-                    {" "}
                     {[...Array(5)].map((_, index) => (
                       <FaStar key={index} className="text-yellow-500" />
                     ))}
@@ -59,17 +60,17 @@ const Testimonials = () => {
                 with Deep Skill Training and how many more players he can help."`}
               </p>
             </blockquote>
-            <blockquote className="rounded-lg  bg-white dark:bg-background border p-6 shadow-sm sm:p-8 text-center">
+            <blockquote className="rounded-lg bg-white dark:bg-background border p-6 shadow-sm sm:p-8 text-center">
               <div className="flex flex-col items-center gap-4">
                 <img
-                  alt=""
+                  alt="Buronbek Mirzasalimov"
                   src="/testimonial1.jpg"
                   className="size-48 rounded-full object-cover"
+                  loading="lazy"
                 />
 
                 <div>
                   <div className="flex justify-center gap-0.5 text-green-500">
-                    {" "}
                     {[...Array(5)].map((_, index) => (
                       <FaStar key={index} className="text-yellow-500" />
                     ))}
@@ -92,17 +93,17 @@ const Testimonials = () => {
                 feedback at the end was really useful."`}
               </p>
             </blockquote>
-            <blockquote className="rounded-lg  bg-white dark:bg-background border p-6 shadow-sm sm:p-8 text-center">
+            <blockquote className="rounded-lg bg-white dark:bg-background border p-6 shadow-sm sm:p-8 text-center">
               <div className="flex flex-col items-center gap-4">
                 <img
-                  alt=""
+                  alt="Aaron Ashley"
                   src="/testimonial2.png"
                   className="size-48 rounded-full object-cover"
+                  loading="lazy"
                 />
 
                 <div>
                   <div className="flex justify-center gap-0.5 text-green-500">
-                    {" "}
                     {[...Array(5)].map((_, index) => (
                       <FaStar key={index} className="text-yellow-500" />
                     ))}

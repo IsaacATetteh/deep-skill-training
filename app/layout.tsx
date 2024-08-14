@@ -5,6 +5,11 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 import { ThemeProvider } from "@/components/theme-provider";
 
+export const metadata: Metadata = {
+  title: "Deep Skill Training",
+  description: "Developing your deep skill, the tailored way.",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
