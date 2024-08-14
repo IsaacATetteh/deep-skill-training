@@ -3,8 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
-import { BackgroundGradient } from "./ui/background-gradient";
-
+import Image from "next/image";
 const Testimonials = () => {
   const { ref: sectionRef, inView: isSectionVisible } = useInView({
     triggerOnce: true,
@@ -31,10 +30,12 @@ const Testimonials = () => {
           </div>
           <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-3">
             <blockquote className="flex h-full flex-col justify-between items-center text-center bg-white dark:bg-background p-6 shadow-sm sm:p-8 border">
-              <img
+              <Image
                 alt="Denys Garmash"
                 src="/testimonial3.jpg"
                 className="rounded-full h-auto w-40 md:w-48 mt-3"
+                width={500}
+                height={500}
               />
               <h2 className="font-bold text-xl mt-5">Denys Garmash</h2>
               <p className="font-medium text-gray-400 md:text-sm">
@@ -54,7 +55,9 @@ const Testimonials = () => {
               </p>
             </blockquote>
             <blockquote className="flex h-full flex-col justify-between items-center text-center bg-white dark:bg-background p-6 shadow-sm sm:p-8 border">
-              <img
+              <Image
+                width={500}
+                height={500}
                 alt="Denys Garmash"
                 src="/testimonial1.jpg"
                 className="rounded-full h-auto w-40 md:w-48 mt-3"
@@ -77,10 +80,12 @@ const Testimonials = () => {
               </p>
             </blockquote>
             <blockquote className="flex h-full flex-col justify-between items-center text-center bg-white dark:bg-background p-6 shadow-sm sm:p-8 border">
-              <img
+              <Image
                 alt="Aaron Ashley"
                 src="/testimonial2.png"
                 className="rounded-full h-auto w-40 md:w-48 mt-3"
+                width={500}
+                height={500}
               />
               <h2 className="font-bold text-xl mt-5">Aaron Ashley</h2>
               <p className="font-medium text-gray-400 md:text-sm">
