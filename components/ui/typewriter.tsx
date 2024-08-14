@@ -9,26 +9,26 @@ export function TypewriterEffectDemo() {
       text: "Developing",
     },
     {
-      text: "your",
+      text: "Your",
     },
     {
-      text: "deep",
+      text: "Deep",
       className: "underline",
     },
     {
-      text: "skill,",
+      text: "Skill,",
       className: "underline",
     },
 
     {
-      text: "the",
+      text: "The",
     },
     {
-      text: "tailored",
+      text: "Tailored",
       className: "text-blue-500 dark:text-blue-500",
     },
     {
-      text: "way.",
+      text: "Way.",
       className: "text-blue-500 dark:text-blue-500",
     },
   ].map((word) => ({
