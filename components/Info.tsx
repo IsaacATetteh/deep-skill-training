@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
 function Info() {
@@ -37,9 +36,7 @@ function Info() {
               <img
                 alt="Richard Holmes"
                 src="/coach.png"
-                width={500}
-                height={500}
-                className="mx-auto inset-0 h-64 md:h-72 lg:h-96 w-auto lg:mt-16 mb-20 object-cover rounded-full animated-border"
+                className="mx-auto inset-0 h-64 md:h-72 lg:h-96 w-auto lg:mt-16 mb-20 rounded-full animated-border"
               />
             </div>
 
@@ -93,11 +90,9 @@ function Info() {
 
             <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full">
               <img
-                alt=""
+                alt="OLIVER football tracker"
                 src="/OLIVER.png"
-                width={500}
-                height={500}
-                className="mx-auto inset-0 h-64 md:h-72 lg:h-96 w-auto lg:mt-16 mb-20 object-cover rounded-full animated-border"
+                className="mx-auto inset-0 h-64 md:h-72 lg:h-96 w-auto lg:mt-16 mb-20 rounded-full animated-border"
               />
             </div>
           </div>
