@@ -22,8 +22,8 @@ const Testimonials = () => {
       >
         <div className="mx-auto max-w-screen-2xl px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
           <div className="md:flex md:items-end md:justify-between ">
-            <div className="max-w-xl mx-auto">
-              <h2 className="text-4xl font-bold tracking-tight sm:text-5xl ">
+            <div className="flex justify-center max-w-xl mx-auto">
+              <h2 className="text-4xl font-bold tracking-tight sm:text-5xl">
                 Testimonials
               </h2>
             </div>

@@ -27,7 +27,7 @@ const locations = [
   },
   {
     position: { lat: 56.11897131396835, lng: -3.912918855291855 },
-    description: "Springkerse, Stirling FK7 7UJ",
+    description: "Springkerse, Stirling, FK7 7UJ",
     name: "Forthbank Performance Centre",
   },
   {
@@ -37,7 +37,7 @@ const locations = [
   },
   {
     position: { lat: 55.93363615653315, lng: -3.290043525850762 },
-    description: "208 Broomhouse Rd, Edinburgh EH12 9AD",
+    description: "208 Broomhouse Rd, Edinburgh, EH12 9AD",
     name: "St Augustines 3G",
   },
 ];
