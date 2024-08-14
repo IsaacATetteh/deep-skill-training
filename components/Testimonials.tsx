@@ -34,7 +34,7 @@ const Testimonials = () => {
                 <img
                   alt="Denys"
                   src="/Denys.jpg"
-                  className="size-48 rounded-full object-cover"
+                  className="md:size-40 lg:size-48 rounded-full object-cover"
                   loading="lazy"
                 />
 
@@ -65,7 +65,7 @@ const Testimonials = () => {
                 <img
                   alt="Buronbek Mirzasalimov"
                   src="/testimonial1.jpg"
-                  className="size-48 rounded-full object-cover"
+                  className="md:size-40 lg:size-48 rounded-full object-cover"
                   loading="lazy"
                 />
 
@@ -98,7 +98,7 @@ const Testimonials = () => {
                 <img
                   alt="Aaron Ashley"
                   src="/testimonial2.png"
-                  className="size-48 rounded-full object-cover"
+                  className="md:size-40 lg:size-48 rounded-full object-cover"
                   loading="lazy"
                 />
 
