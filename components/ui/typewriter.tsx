@@ -1,7 +1,6 @@
 "use client";
 import { TypewriterEffect } from "../ui/typewriter-effect";
 import Checklist from "./checklist";
-import { BackgroundBeams } from "../ui/background-beams";
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
 
@@ -11,25 +10,25 @@ export function TypewriterEffectDemo() {
       text: "Developing",
     },
     {
-      text: "your",
+      text: "Your",
     },
     {
-      text: "deep",
+      text: "Deep",
       className: "underline",
     },
     {
-      text: "skill,",
+      text: "Skill,",
       className: "underline",
     },
     {
-      text: "the",
+      text: "Tthe",
     },
     {
-      text: "tailored",
+      text: "Tailored",
       className: "text-blue-500 dark:text-blue-500",
     },
     {
-      text: "way.",
+      text: "Way.",
       className: "text-blue-500 dark:text-blue-500",
     },
   ].map((word) => ({
