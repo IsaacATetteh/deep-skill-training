@@ -25,6 +25,7 @@ const Partnerships = () => {
                 src={isDarkMode ? "GRIPWORX_Light.png" : "GRIPWORX_Dark.png"}
                 alt="GRIPWORX"
                 className="md:scale-75 scale-75"
+                loading="lazy"
               />
             </a>
           </li>
@@ -40,6 +41,7 @@ const Partnerships = () => {
                 }
                 alt="OLIVER SPORTS"
                 className="md:scale-75 scale-50"
+                loading="lazy"
               />
             </a>
           </li>
@@ -53,6 +55,7 @@ const Partnerships = () => {
                 src={isDarkMode ? "VX3_Light.png" : "VX3.png"}
                 alt="VX3"
                 className="md:scale-75 scale-50"
+                loading="lazy"
               />
             </a>
           </li>
