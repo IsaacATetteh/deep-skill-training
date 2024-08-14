@@ -60,9 +60,6 @@
 }
 
 
-body, html {
-  overflow-x: hidden
-}
 
 @layer base {
   * {

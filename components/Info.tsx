@@ -36,7 +36,7 @@ function Info() {
             <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full">
               <img
                 alt="Richard Holmes"
-                src="/coach.png"
+                src="/coach.avif"
                 className="mx-auto inset-0 h-64 md:h-72 lg:h-96 w-auto lg:mt-16 mb-20  rounded-full animated-border"
               />
             </div>
@@ -92,7 +92,7 @@ function Info() {
             <div className="relative h-64 overflow-hidden sm:h-80 lg:h-full">
               <img
                 alt=""
-                src="/OLIVER.png"
+                src="/OLIVER.avif"
                 className="mx-auto inset-0 h-64 md:h-72 lg:h-96 w-auto lg:mt-16 mb-20  rounded-full animated-border"
               />
             </div>
