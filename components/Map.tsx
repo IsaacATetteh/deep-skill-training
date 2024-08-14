@@ -22,7 +22,7 @@ const center = {
 const locations = [
   {
     position: { lat: 56.140329460259395, lng: -3.9284515332014083 },
-    description: "Airthrey Rd, Stirling, Scotland FK9 5JP",
+    description: "Airthrey Rd, Stirling, FK9 5JP",
     name: "Wallace High School",
   },
   {
@@ -79,61 +79,48 @@ const Map = () => {
   return (
     <section ref={sectionRef} className="bg-gray-50 dark:bg-background">
       <motion.div
-        className="md:grid md:grid-cols-2 gap-8 mx-auto max-w-screen-xl px-4 py-4 sm:px-6 sm:py-12 lg:px-8"
         initial={{ opacity: 0, y: 50 }}
         animate={{
           opacity: isSectionVisible ? 1 : 0,
           y: isSectionVisible ? 0 : 50,
         }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 0.5 }}
+        className="flex items-center justify-center w-full"
       >
-        <motion.div
-          className="col-span-1 h-[400px] md:h-[500px] w-full mx-auto mb-10 md:mb-0"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: isSectionVisible ? 1 : 0 }}
-          transition={{ duration: 1.5, delay: 0.5 }}
-        >
-          <GoogleMap
-            mapContainerStyle={containerStyle}
-            center={center}
-            zoom={8}
-            onLoad={handleMapLoad}
-          >
-            {locations.map((location, index) => (
-              <Marker
-                key={index}
-                position={location.position}
-                onClick={() => setSelectedLocation(location)}
-              >
-                {selectedLocation === location && (
-                  <InfoWindow onCloseClick={() => setSelectedLocation(null)}>
-                    <div className="flex flex-col justify-center items-center text-black">
-                      <h1 className="font-bold text-md">{location.name}</h1>
-                      <p className="line-clamp-1">{location.description}</p>
-                    </div>
-                  </InfoWindow>
-                )}
-              </Marker>
-            ))}
-          </GoogleMap>
-        </motion.div>
-        <motion.div
-          className="flex flex-col justify-center items-center  gap-10"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: isSectionVisible ? 1 : 0 }}
-          transition={{ duration: 1.5, delay: 1 }}
-        >
-          <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-            Training Locations
-          </h2>
-          <TableDemo onLocationClick={handleLocationClick} />
-        </motion.div>
-        <motion.div
-          className="col-span-2 flex justify-center mt-16"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: isSectionVisible ? 1 : 0 }}
-          transition={{ duration: 1.5, delay: 1.5 }}
-        ></motion.div>
+        <div className="md:grid md:grid-cols-2 gap-8 mx-auto max-w-screen-xl px-4 py-4 sm:px-6 sm:py-12 lg:px-8">
+          <div className="col-span-1 h-[400px] md:h-[500px] w-full mx-auto mb-10 md:mb-0">
+            <GoogleMap
+              mapContainerStyle={containerStyle}
+              center={center}
+              zoom={8}
+              onLoad={handleMapLoad}
+            >
+              {locations.map((location, index) => (
+                <Marker
+                  key={index}
+                  position={location.position}
+                  onClick={() => setSelectedLocation(location)}
+                >
+                  {selectedLocation === location && (
+                    <InfoWindow onCloseClick={() => setSelectedLocation(null)}>
+                      <div className="flex flex-col justify-center items-center text-black">
+                        <h1 className="font-bold text-md">{location.name}</h1>
+                        <p className="line-clamp-1">{location.description}</p>
+                      </div>
+                    </InfoWindow>
+                  )}
+                </Marker>
+              ))}
+            </GoogleMap>
+          </div>
+          <div className="flex flex-col justify-center items-center gap-10">
+            <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+              Training Locations
+            </h2>
+            <TableDemo onLocationClick={handleLocationClick} />
+          </div>
+          <div className="col-span-2 flex justify-center mt-16"></div>
+        </div>
       </motion.div>
     </section>
   );
