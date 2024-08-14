@@ -46,7 +46,7 @@ export function TypewriterEffectDemo() {
     <div className="flex flex-col items-center justify-center h-[42rem]">
       <div className="flex flex-col items-center md:mb-36">
         <img src="test.png" alt="DST" className="scale-75 md:scale-50 z-10 " />
-        <div className="mb-5 md:mb-10 h-24 flex items-center ">
+        <div className="my-5 h-24">
           <TypewriterEffect words={words} className="text-center" />
         </div>
         <Checklist />
