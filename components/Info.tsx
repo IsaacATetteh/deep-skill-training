@@ -1,8 +1,5 @@
 "use client";
 import React from "react";
-import { motion } from "framer-motion";
-import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
-import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 function Info() {

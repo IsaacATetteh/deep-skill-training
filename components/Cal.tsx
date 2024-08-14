@@ -5,7 +5,7 @@ import { FlipWords } from "./ui/flip-words";
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
 import PulsatingButton from "@/components/ui/pulsating-button";
-import { Button } from "./ui/button";
+
 const Cal = () => {
   const words = ["skill?", "technique?", "intelligence?", "positioning?"];
   useEffect(() => {
@@ -29,7 +29,10 @@ const Cal = () => {
     })();
   }, []);
   return (
-    <div className="h-[25rem] flex flex-col items-center px-4 bg-gray-50 dark:bg-background">
+    <div
+      id="cal-section"
+      className="h-[25rem] flex flex-col items-center px-4 bg-gray-50 dark:bg-background"
+    >
       <div className="text-[28px] md:text-4xl text-center mx-auto font-semibold text-neutral-600 dark:text-neutral-400 mb-14 ">
         Ready to improve your <br />
         <FlipWords words={words} />
