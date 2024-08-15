@@ -1,41 +1,9 @@
 "use client";
-import { TypewriterEffect } from "../ui/typewriter-effect";
-import Checklist from "./checklist";
+import Checklist from "./ui/checklist";
 import AnimatedGridPattern from "@/components/magicui/animated-grid-pattern";
 import { cn } from "@/lib/utils";
-
-export function TypewriterEffectDemo() {
-  const words = [
-    {
-      text: "Developing",
-    },
-    {
-      text: "Your",
-    },
-    {
-      text: "Deep",
-      className: "underline",
-    },
-    {
-      text: "Skill,",
-      className: "underline",
-    },
-    {
-      text: "The",
-    },
-    {
-      text: "Tailored",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-    {
-      text: "Way.",
-      className: "text-blue-500 dark:text-blue-500",
-    },
-  ].map((word) => ({
-    ...word,
-    className: `${word.className || ""} text-2xl md:text-5xl`.trim(),
-  }));
-
+import { TypeAnimation } from "react-type-animation";
+export function HeroContent() {
   const scrollToCalSection = () => {
     document
       .getElementById("cal-section")
@@ -46,8 +14,17 @@ export function TypewriterEffectDemo() {
     <div className="flex flex-col items-center justify-center h-[42rem]">
       <div className="flex flex-col items-center md:mb-36">
         <img src="DST.avif" alt="DST" className="scale-75 md:scale-50 z-10" />
-        <div className=" mt-5 md:mt-0 md:mb-10 h-24 flex justify-center md:px-8 px-2">
-          <TypewriterEffect words={words} className="text-center" />
+        <div className=" mt-5 md:mt-0 md:mb-12 h-24 text-center md:px-8">
+          <h1 className="text-lg xs:text-2xl md:text-[45px] font-semibold md:mb-6">
+            Developing Your <span className="underline">Deep Skill</span>, The
+          </h1>
+          <TypeAnimation
+            sequence={[1200, "Tailored Way."]}
+            wrapper="span"
+            speed={50}
+            className="text-lg xs:text-2xl md:text-[45px] font-semibold text-blue-500"
+            repeat={Infinity}
+          />
         </div>
         <Checklist />
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">

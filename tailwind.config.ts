@@ -17,6 +17,10 @@ const config = {
   ],
   prefix: "",
   theme: {
+    screens: {
+      xs: "376px",
+      ...defaultTheme.screens,
+    },
     container: {
       center: true,
       padding: "2rem",

@@ -1,8 +1,8 @@
 import React from "react";
-import { TypewriterEffectDemo } from "./ui/typewriter";
-import Image from "next/image";
+import { HeroContent } from "./HeroContent";
+
 const Hero = () => {
-  return <TypewriterEffectDemo />;
+  return <HeroContent />;
 };
 
 export default Hero;
