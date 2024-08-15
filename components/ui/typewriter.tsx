@@ -45,13 +45,8 @@ export function TypewriterEffectDemo() {
   return (
     <div className="flex flex-col items-center justify-center h-[42rem]">
       <div className="flex flex-col items-center md:mb-36">
-        <img
-          src="DST.avif"
-          alt="DST"
-          className="scale-75 md:scale-50 z-10"
-          loading="lazy"
-        />
-        <div className="mb-5 md:mb-10 h-24 flex items-center w-full">
+        <img src="DST.avif" alt="DST" className="scale-75 md:scale-50 z-10" />
+        <div className=" mt-5 md:mt-0 md:mb-10 h-24 flex justify-center md:px-8 px-2">
           <TypewriterEffect words={words} className="text-center" />
         </div>
         <Checklist />
