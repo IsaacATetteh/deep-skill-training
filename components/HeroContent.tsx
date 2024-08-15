@@ -19,7 +19,7 @@ export function HeroContent() {
             Developing Your <span className="underline">Deep Skill</span>, The
           </h1>
           <TypeAnimation
-            sequence={[1200, "Tailored Way."]}
+            sequence={[100, "Tailored Way."]}
             wrapper="span"
             speed={50}
             className="text-lg xs:text-2xl md:text-[45px] font-semibold text-blue-500"
