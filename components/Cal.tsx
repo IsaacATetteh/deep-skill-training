@@ -46,7 +46,7 @@ const Cal = () => {
     <div
       id="cal-section"
       ref={sectionRef} // Ensure the ref is attached here
-      className="h-[25rem] flex flex-col items-center px-4 bg-gray-50 dark:bg-background"
+      className="h-[26rem] md:h-[30rem] flex flex-col items-center px-4 bg-gray-50 dark:bg-background "
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
