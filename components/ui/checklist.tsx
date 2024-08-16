@@ -1,4 +1,3 @@
-// components/Checklist.js
 export default function Checklist() {
   const items = [
     "1 to 1",
@@ -29,7 +28,7 @@ export default function Checklist() {
               />
             </svg>
           </div>
-          <span className="ml-2 text-sm md:text-md">{item}</span>
+          <span className="ml-2 text-sm md:text-base">{item}</span>
         </div>
       ))}
     </div>

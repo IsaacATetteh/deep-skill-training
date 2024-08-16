@@ -67,7 +67,9 @@ const Cal = () => {
             data-cal-link="deepskilltraining/call"
             data-cal-config='{"layout":"month_view"}'
           >
-            <p className="font-bold text-lg">Book A Free Consultation Call</p>
+            <p className="font-bold text-lg md:text-xl">
+              Book A Free Consultation Call
+            </p>
           </PulsatingButton>
           <h3 className="scroll-m-20 text-xl md:text-3xl font-semibold tracking-tight">
             Or

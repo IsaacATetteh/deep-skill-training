@@ -5,9 +5,30 @@ import { cn } from "@/lib/utils";
 import { TypeAnimation } from "react-type-animation";
 export function HeroContent() {
   const scrollToCalSection = () => {
-    document
-      .getElementById("cal-section")
-      ?.scrollIntoView({ behavior: "smooth" });
+    const target = document.getElementById("cal-section");
+    if (!target) return;
+
+    const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+    const startPosition = window.scrollY;
+    const distance =
+      targetPosition -
+      startPosition -
+      window.innerHeight / 2 +
+      target.clientHeight / 2;
+    const duration = 1000;
+    let start: number | null = null;
+
+    const step = (timestamp: number) => {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      const percent = Math.min(progress / duration, 1);
+      window.scrollTo(0, startPosition + distance * percent);
+      if (progress < duration) {
+        requestAnimationFrame(step);
+      }
+    };
+
+    requestAnimationFrame(step);
   };
 
   return (
@@ -15,14 +36,14 @@ export function HeroContent() {
       <div className="flex flex-col items-center md:mb-36">
         <img src="DST.avif" alt="DST" className="scale-75 md:scale-50 z-10" />
         <div className=" mt-5 md:mt-0 md:mb-12 h-24 text-center md:px-8">
-          <h1 className="text-lg xs:text-2xl md:text-[45px] font-semibold md:mb-6">
+          <h1 className="text-lg xs:text-2xl md:text-[45px] font-bold md:mb-6">
             Developing Your <span className="underline">Deep Skill</span>, The
           </h1>
           <TypeAnimation
             sequence={[100, "Tailored Way."]}
             wrapper="span"
             speed={50}
-            className="text-lg xs:text-2xl md:text-[45px] font-semibold text-blue-500"
+            className="text-lg xs:text-2xl md:text-[45px] font-bold text-blue-500"
             repeat={Infinity}
           />
         </div>

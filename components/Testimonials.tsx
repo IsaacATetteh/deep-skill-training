@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaStar } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
-import Image from "next/image";
 
 const Testimonials = () => {
   const { ref: sectionRef, inView: isSectionVisible } = useInView({
