@@ -28,7 +28,7 @@ export default function Checklist() {
               />
             </svg>
           </div>
-          <span className="ml-2 text-sm md:text-base">{item}</span>
+          <span className="ml-2 text-xs xs:text-sm md:text-base">{item}</span>
         </div>
       ))}
     </div>

@@ -32,26 +32,32 @@ export function HeroContent() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center h-[42rem]">
-      <div className="flex flex-col items-center md:mb-36">
-        <img src="DST.avif" alt="DST" className="scale-75 md:scale-50 z-10" />
-        <div className=" mt-5 md:mt-0 md:mb-12 h-24 text-center md:px-8">
-          <h1 className="text-lg xs:text-2xl md:text-[45px] font-bold md:mb-6">
+    <div className="flex flex-col items-center justify-center h-[42rem] mb-4">
+      <div className="flex flex-col items-center gap-5 md:gap-12">
+        <img
+          src="DST.avif"
+          width={500}
+          height={600}
+          alt="DST"
+          className="scale-75 md:scale-100 z-10 "
+        />
+        <div className="h-16 md:h-24 text-center md:px-8 ">
+          <h1 className="text-lg xs:text-2xl md:text-[42px] lg:text-5xl font-bold md:mb-5">
             Developing Your <span className="underline">Deep Skill</span>, The
           </h1>
           <TypeAnimation
             sequence={[100, "Tailored Way."]}
             wrapper="span"
             speed={50}
-            className="text-lg xs:text-2xl md:text-[45px] font-bold text-blue-500"
+            className="text-lg xs:text-2xl md:text-[42px] lg:text-5xl font-bold text-blue-500"
             repeat={Infinity}
           />
         </div>
         <Checklist />
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
+        <div className="flex flex-col md:flex-row ">
           <button
             onClick={scrollToCalSection}
-            className="z-10  scale-75 md:scale-100 inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+            className="z-10 scale-75 md:scale-100 inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-white transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
           >
             Get Started Today
           </button>
