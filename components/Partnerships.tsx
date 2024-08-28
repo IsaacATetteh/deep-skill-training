@@ -37,7 +37,9 @@ const Partnerships = () => {
             >
               <img
                 src={
-                  isDarkMode ? "OLIVERSPORTS.avif" : "OLIVERSPORTS_Dark.avif"
+                  isDarkMode
+                    ? "OLIVERSPORTS.avif"
+                    : "OLIVER SPORTS Light Mode.avif"
                 }
                 alt="OLIVER SPORTS"
                 className="md:scale-50 scale-50"
