@@ -67,6 +67,7 @@
     @apply bg-background text-foreground;
   }
 }
+
 @keyframes borderAnimation {
   0% {
   
@@ -75,7 +76,7 @@
 
   50% {
    
-    box-shadow: 0 0 10px #3131fd;
+    box-shadow: 0 0 10px #2f2fff;
   }
   100% {
   

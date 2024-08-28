@@ -44,15 +44,13 @@ function Info() {
               <article className="space-y-4 text-lg">
                 <h4 className="text-3xl font-semibold">Experience</h4>
                 <p>
-                  {` 1 to 1 & small group coaching specialist with 3 years of active
-                coaching experience, having trained players as young as 5 years
-                old to 32 years old on a 1 to 1 basis. Players trained have
-                ranged from professional and representing their nation to
-                scholarship athletes at USA division 1 schools and those just
-                starting out or playing at a recreational level.`}
+                  {`1 to 1 coaching specialist with 3 years of active coaching experience, having trained players
+                   as young as 5 years old to 32 years old. Players trained have ranged from professional and 
+                   representing their nation to scholarship athletes at USA division 1 schools and those just 
+                   starting out or playing at a recreational level.`}
                 </p>
                 <p className="pb-10">
-                  {`  Current Stirling Albion Academy Coach working with the U16s,
+                  {`Current Stirling Albion Academy Coach working with the U16s,
                 U20s and Men’s First Team. Prior experience includes coaching
                 the Junior Academy (Ages 9-14) at Dundee United Community Trust
                 along with starting out at highly competitive grassroots teams
@@ -67,32 +65,32 @@ function Info() {
               <article className="space-y-4 text-lg">
                 <h3 className="text-3xl font-semibold">Training Philosophy</h3>
                 <p>
-                  {` The best players are the best problem solvers, for this to
-                happen our training has to give us constant problems for us to
-                solve along with having to adapt to a limitless variety of
-                situations rather than training the same repeatable problem over
-                and over again. By training with us, you will learn that all the
-                movements you make are forms of skill and that ‘deep skill’ is
-                the ability as well as adaptability to perform in a variety of
-                environments. All sessions are in line with this and is tailored
-                to activate your ‘deep skill’.`}
+                  {`The best players are the best problem solvers, for this to happen our training 
+                  has to give us constant problems to solve while encouraging us to adapt to a limitless 
+                  variety of situations rather than training the same repeatable problem over and over 
+                  again. By training with us, you will learn that all the movements you make are forms 
+                  of skill and that to reach 'deep skill' is to have the ability to perform in all environments.`}
                 </p>
                 <p>
-                  {`    The second picture shows the OLIVER football tracker which is
-                the same technology used by the Barça Academy. Deep Skill
-                Training uses it to benchmark and measure performance from your
-                first session with us to your last. The OLIVER football tracker
-                records 28 metrics, giving us real data on your progress,
-                training load and injury status.`}
+                  {`Shown in the 2nd picture is the OLIVER football tracker used by the Barça Academy. Deep Skill 
+                  Training uses it to benchmark and measure in-person performance from your first session with us 
+                  to your last. The OLIVER football tracker records 28 metrics, giving us real data on your progress, 
+                  training load and injury status.`}
+                </p>
+                <p>
+                  {`Deep Skill Training have also introduced the Virtual Academy,
+                  where for the price of a 1 hour in-person session you receive
+                  an at home training program which can be done in your own
+                  time, working on key skills needed on the pitch.`}
                 </p>
               </article>
             </div>
 
-            <div className="relative h-64 sm:h-80 lg:h-full">
+            <div className="relative md:flex md:items-center h-64 sm:h-80 lg:h-full">
               <img
                 alt=""
                 src="/OLIVER.avif"
-                className="mx-auto inset-0 h-64 md:h-72 lg:h-96 w-auto lg:mt-16 mb-20  rounded-full animated-border"
+                className="mx-auto  inset-0 h-64 md:h-72 lg:h-96 w-auto lg:mt-16 mb-20  rounded-full animated-border"
               />
             </div>
           </div>

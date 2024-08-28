@@ -22,7 +22,7 @@ const Partnerships = () => {
               rel="noopener noreferrer"
             >
               <img
-                src={isDarkMode ? "GRIPWORX_Light.png" : "GRIPWORX_Dark.png"}
+                src={isDarkMode ? "GRIPWORX.avif" : "GRIPWORX_Dark.avif"}
                 alt="GRIPWORX"
                 className="md:scale-50 scale-75"
                 loading="lazy"
@@ -37,7 +37,7 @@ const Partnerships = () => {
             >
               <img
                 src={
-                  isDarkMode ? "OLIVER_SPORTS_Light.png" : "OLIVERSPORTS.png"
+                  isDarkMode ? "OLIVERSPORTS.avif" : "OLIVERSPORTS_Dark.avif"
                 }
                 alt="OLIVER SPORTS"
                 className="md:scale-50 scale-50"
@@ -46,14 +46,13 @@ const Partnerships = () => {
             </a>
           </div>
           <div className="md:w-1/3">
-            {" "}
             <a
               href="https://vx-3.com/?tw_source=google&tw_adid=&tw_campaign=20152902661&gad_source=1&gbraid=0AAAAABdkOVCbxAVKWtdLODhk2GHQG-FUo&gclid=Cj0KCQjwiOy1BhDCARIsADGvQnAnfPt5BtshgBrQhaOIb98V5rlRUJlK8I2e80LmYML3cUZHEeMABzgaAq7YEALw_wcB"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src={isDarkMode ? "VX3_Light.png" : "VX3.png"}
+                src={isDarkMode ? "VX3.avif" : "VX3_Dark.avif"}
                 alt="VX3"
                 className="md:scale-50 scale-50"
                 loading="lazy"

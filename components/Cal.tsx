@@ -60,7 +60,16 @@ const Cal = () => {
           Ready to improve your <br />
           <FlipWords words={words} />
         </div>
-        <div className="flex flex-col gap-7 md:gap-10 items-center justify-center">
+        <div className="flex flex-col gap-10 md:gap-16 items-center justify-center">
+          <PulsatingButton
+            data-cal-namespace="enqui"
+            data-cal-link="forms/116951f1-00d2-446d-8950-27ba6d975235"
+            data-cal-config='{"layout":"month_view"}'
+            className=""
+          >
+            <p className="font-bold text-lg md:text-xl">Send An Enquiry</p>
+          </PulsatingButton>
+
           <PulsatingButton
             className=""
             data-cal-namespace="call"
@@ -71,16 +80,12 @@ const Cal = () => {
               Book A Free Consultation Call
             </p>
           </PulsatingButton>
-          <h3 className="scroll-m-20 text-xl md:text-3xl font-semibold tracking-tight">
-            Or
-          </h3>
-          <PulsatingButton
-            data-cal-namespace="enqui"
-            data-cal-link="forms/116951f1-00d2-446d-8950-27ba6d975235"
-            data-cal-config='{"layout":"month_view"}'
-            className=""
-          >
-            <p className="font-bold text-lg md:text-xl">Send An Enquiry</p>
+
+          <PulsatingButton disabled={true}>
+            <p className="font-bold text-lg md:text-xl">
+              Virtual Academy
+              <span className="text-black italic">(Coming Soon)</span>
+            </p>
           </PulsatingButton>
         </div>
       </motion.div>

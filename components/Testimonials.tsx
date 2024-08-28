@@ -32,7 +32,7 @@ const Testimonials = () => {
               <div className="flex flex-col items-center gap-4">
                 <img
                   alt="Denys"
-                  src="/Denys.jpg"
+                  src="/testimonial1.avif"
                   className="size-40 lg:size-48 rounded-full object-cover"
                   loading="lazy"
                 />
@@ -63,7 +63,7 @@ const Testimonials = () => {
               <div className="flex flex-col items-center gap-4">
                 <img
                   alt="Buronbek Mirzasalimov"
-                  src="/testimonial1.jpg"
+                  src="/testimonial3.avif"
                   className="size-40 lg:size-48 rounded-full object-cover"
                   loading="lazy"
                 />
@@ -96,7 +96,7 @@ const Testimonials = () => {
               <div className="flex flex-col items-center gap-4">
                 <img
                   alt="Aaron Ashley"
-                  src="/testimonial2.png"
+                  src="/testimonial2.avif"
                   className="size-40 lg:size-48 rounded-full object-cover"
                   loading="lazy"
                 />
